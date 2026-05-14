@@ -44,4 +44,4 @@ jobs:
             echo "$BYOND_MAJOR.$BYOND_MINOR" > "$HOME/BYOND/version.txt"
             cd ~/
 
-      - run: LD_LIBRARY_PATH=$HOME/BYOND/bin $HOME/BYOND/bin/DreamMaker test.dme
+      - run: LD_LIBRARY_PATH=$HOME/BYOND/byond/bin $HOME/BYOND/byond/bin/DreamMaker test.dme
