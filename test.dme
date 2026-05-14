@@ -1,0 +1,12 @@
+/world/New()
+  . = ..()
+#warn warning!!!!
+  world.log << "All good"
+
+
+#error pants: pooped
+
+
+/world/Del()
+  world.log << "All bad"
+  return ..()
