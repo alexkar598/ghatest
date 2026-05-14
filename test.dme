@@ -10,3 +10,4 @@
 /world/Del()
   world.log << "All bad
   return ..()
+
