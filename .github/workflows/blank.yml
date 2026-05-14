@@ -49,5 +49,7 @@ jobs:
             chmod +x dreamchecker
 
       - run: LD_LIBRARY_PATH=$HOME/BYOND/byond/bin $HOME/BYOND/byond/bin/DreamMaker test.dme
+        if: always()
 
       - run: ~/dreamchecker
+        if: always()
