@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: DreamAnnotate
-        uses: alexkar598/DreamAnnotate@v3-rc2
+        uses: alexkar598/DreamAnnotate@v3-rc3
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
