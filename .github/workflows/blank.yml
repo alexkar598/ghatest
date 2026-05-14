@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: DreamAnnotate
         uses: alexkar598/DreamAnnotate/@67354dcd99fe4f980d9887f04e0109472de0fccb
+        with:
+          dreamchecker: "false"
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
