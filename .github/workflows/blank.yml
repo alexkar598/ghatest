@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: DreamAnnotate
-        uses: alexkar598/DreamAnnotate@v3-rc3
+        uses: alexkar598/DreamAnnotate/@67354dcd99fe4f980d9887f04e0109472de0fccb
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
@@ -45,5 +45,11 @@ jobs:
             make here
             echo "$BYOND_MAJOR.$BYOND_MINOR" > "$HOME/BYOND/version.txt"
             cd ~/
+            wget "https://github.com/SpaceManiac/SpacemanDMM/releases/download/suite-1.11/dreamchecker"
+            chmod +x dreamchecker
 
       - run: LD_LIBRARY_PATH=$HOME/BYOND/byond/bin $HOME/BYOND/byond/bin/DreamMaker test.dme
+        if: always()
+
+      - run: ~/dreamchecker
+        if: always()
