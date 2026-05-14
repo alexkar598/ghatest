@@ -4,9 +4,9 @@
   world.log << "All good"
 
 
-#error pants: pooped
+//#error pants: pooped
 
 
 /world/Del()
-  world.log << "All bad"
+  world.log << "All bad
   return ..()
